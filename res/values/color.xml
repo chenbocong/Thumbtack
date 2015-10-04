@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brown">#c9a379</color>
+    <color name="deepgray">#bf262626</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="transparentgray">#ee373737</color>
+    <color name="blue">#00e</color>
+    <color name="lightblue">#0080fb</color>
+    <color name="lightwhite">#fddbdbdb</color>
+    <color name="red">#e00</color>
+    <color name="deepgreen">#6bce52</color>
+    <color name="deepred">#ff3333</color>
+    <color name="gold">#f66000</color>
+    <!-- 紫色 -->
+    <color name="purple">#ff880088</color>
+    <!-- 粉红色 -->
+    <color name="pink">#FFC0CB</color>
+    <!-- 亮粉红色 -->
+    <color name="lightpink">#FFB6C1</color>
+    <!-- 深粉红色 -->
+    <color name="deeppink">#FF1493</color>
+    <color name="translucent">#dd000000</color>
+    <color name="halftransparent">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="deep_black">#ff000000</color>
+    <!--登录底部文字颜色-->
+    <color name="login_bottom_text">#666</color>
+    <color name="needsms_kefu">#fa9303</color>
+
+    <color name="add_contact_banckground">#f7f7f7</color>
+    <color name="sg_rz">#eef6fe</color>
+
+    <color name="new_theme_red">#d23e3e</color>
+    <color name="pro_manage_green">#77c033</color>
+    <color name="slideMenu_left_text_color">#4a4a4a</color>
+    <color name="slideMenu_divider_color">#cccccc</color>
+    <color name="index_column_title_color">#6e6e6e</color>
+    <color name="index_column_bg_color">#eff3f6</color>
+    <color name="app_main_tab_text_color">#999999</color>
+    <color name="dialog_divider_color">#ffe0e0e0</color>
+
+
+    <!-- 分栏按钮样式-->
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="btn_background_transpent">#00000000</color>
+    <color name="bg_tabbar">#f5f5f7</color>
+    <color name="normal_bg_tab_btn">#f5f5f7</color>
+    <color name="cl_bg_tab_btn">#107fa2e6</color>
+
+
+    <color name="btn_press">#d9d9d9</color>
+    
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="gray">#808080</color>
+    <color name="lightgreen">#99CC33</color>
+    <color name="green">#00CC00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red_f9">#f9702d</color>
+</resources>

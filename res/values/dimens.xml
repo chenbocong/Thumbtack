@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="height_top_bar">55dp</dimen>
+
+
+    <!--TabBar图片尺寸-->
+    <dimen name="size_ic_tab">28dp</dimen>
+    <!--分割线高度-->
+    <dimen name="height_divider">1px</dimen>
+
+    <!--我的项目界面-->
+    <!--项目状态图片标签边距-->
+    <dimen name="my_project_status_margin">5dp</dimen>
+
+    <!-- 分栏按钮样式-->
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+
+    <!-- 应用边距尺寸 -->
+    <dimen name="superbig_space">30dp</dimen>
+
+    <!-- 大间隔36 ~ 38px -->
+    <dimen name="biger_space">24dp</dimen>
+    <!-- 大间隔30 ~ 32px -->
+    <dimen name="big_space">18dp</dimen>
+    <!-- 中间隔20 ~ 24px -->
+    <dimen name="middle_space">14dp</dimen>
+    <dimen name="middlerr_space">12dp</dimen>
+    <dimen name="middler_space">10dp</dimen>
+    <!-- 小间隔14 ~ 18px -->
+    <dimen name="small_space">8dp</dimen>
+    <dimen name="smaller_space">6dp</dimen>
+    <!-- 更小的间隔 -->
+    <dimen name="tiny_space">4dp</dimen>
+    <dimen name="tinyest_space">2dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/cl_bg_tab_btn" android:state_pressed="true"/>
+    <item android:drawable="@color/radio_button_selected_color" android:state_enabled="false"/>
+    <item android:drawable="@color/radio_button_selected_color"/>
+</selector>

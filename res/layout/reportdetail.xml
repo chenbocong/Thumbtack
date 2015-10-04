@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@drawable/topbanner"
+            android:gravity="center_vertical">
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:padding="14dp"
+                android:src="@drawable/back" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="上报详情"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+                />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:layout_height="0dp">
+        <Button
+                android:id="@+id/btn_report_loc"
+                android:text="定位到当前位置"
+                android:drawableLeft="@drawable/umeng_socialize_location_mark"
+                android:background="@drawable/list_gray_item1"
+                android:textSize="@dimen/normal_textSize"
+                android:textColor="@color/black"
+                android:padding="@dimen/small_space"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:paddingLeft="@dimen/small_space"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_divider"
+                android:background="@drawable/list_item_divide_operate"/>
+
+        <TextView
+                android:id="@+id/tv_report_alarm"
+                android:text="报警原因"
+                android:drawableLeft="@drawable/down_arrow"
+                android:drawablePadding="@dimen/small_space"
+                android:layout_marginLeft="@dimen/tinyest_space"
+                android:background="@drawable/list_gray_item1"
+                android:textSize="@dimen/normal_textSize"
+                android:textColor="@color/black"
+                android:padding="@dimen/small_space"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_divider"
+                android:background="@drawable/list_item_divide_operate"/>
+        <EditText
+                android:hint="详情描述"
+                android:gravity="top"
+                android:layout_margin="@dimen/small_space"
+                android:background="@drawable/popbox_bg"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="200dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+        <Button
+                android:gravity="center"
+                android:text="开始上报"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_textSize"
+                android:background="@color/new_theme_red"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>

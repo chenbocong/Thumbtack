@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <FrameLayout
+            android:id="@+id/map_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <!-- 百度MapView控件 -->
+        <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:apiKey="0Mg_koWoyZUiYLfZxmPfp4LKInB5LqTnagYueaw"
+                android:clickable="true"
+                android:enabled="true"/>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="105dip">
+            <!-- 地址信息显示TextView -->
+            <TextView
+                    android:id="@+id/tv_help_locinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:maxEms="12"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="10dip"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/normal_textSize"/>
+
+        </LinearLayout>
+        <Button
+                android:id="@+id/btn_report_locRepeat"
+                android:layout_marginLeft="@dimen/middle_space"
+                android:background="@drawable/umeng_socialize_location_mark"
+                android:layout_marginBottom="60dp"
+                android:gravity="bottom|left"
+                android:layout_gravity="bottom|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/btn_report"
+                android:text="上报信息"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_textSize"
+                android:background="@color/new_theme_red"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+    </FrameLayout>
+</LinearLayout>

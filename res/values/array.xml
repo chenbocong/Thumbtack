@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="aramyways">
+        <item>交通事故</item>
+        <item>遭遇盗窃</item>
+        <item>遭遇抢劫</item>
+        <item>涉枪案件</item>
+        <item>社会纠纷</item>
+        <item>遭遇绑架</item>
+    </string-array>
+</resources>
