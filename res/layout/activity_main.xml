@@ -1,155 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/mainLayout"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/topbanner"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/txt_titlebar_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider_bottom_line_v"
+        android:layout_below="@+id/top_bar" />
+
+    <View
+        android:id="@+id/divider_bottom_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/main_bottom"
+        android:background="@color/slideMenu_divider_color" />
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombanner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_app_selector"
+            android:onClick="onTabClicked" >
+
+            <ImageView
+                android:id="@+id/help_iv"
+                android:layout_width="@dimen/size_ic_tab"
+                android:layout_height="@dimen/size_ic_tab"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tiny_space"
+                android:background="@drawable/help" />
+
+            <Button
+                android:id="@+id/btn_address_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white">
-    <RelativeLayout
-            android:id="@+id/top_bar"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_top_bar"
-            android:background="@drawable/topbanner"
-            android:gravity="center_vertical">
-        <TextView
-                android:id="@+id/title_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                style="@style/txt_titlebar_message"
-                />
-    </RelativeLayout>
-    <RelativeLayout
-            android:id="@+id/fragment_help"
-            android:layout_width="match_parent"
+                android:layout_below="@+id/help_iv"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:text="导航"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_report"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_below="@+id/top_bar"
-            android:layout_above="@+id/divider_bottom_line_v"/>
-    <View
-            android:id="@+id/divider_bottom_line_v"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_above="@+id/main_bottom"
-            android:background="@color/slideMenu_divider_color"/>
-    <LinearLayout
-            android:id="@+id/main_bottom"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/bottombanner"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-        <RelativeLayout
-                android:id="@+id/rl_help"
-                android:layout_width="0dp"
-                android:onClick="onTabClicked"
-                android:background="@drawable/tab_app_selector"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="@drawable/tab_app_selector"
+            android:onClick="onTabClicked" >
 
             <ImageView
-                    android:id="@+id/help_iv"
-                    android:layout_width="@dimen/size_ic_tab"
-                    android:layout_height="@dimen/size_ic_tab"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/tiny_space"
-                    android:background="@drawable/help"
-                    />
-            <Button
-                    android:id="@+id/btn_address_list"
-                    android:layout_below="@+id/help_iv"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:text="求助"
-                    android:clickable="false"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/smaller_textSize"
-                    />
-        </RelativeLayout>
-        <RelativeLayout
-                android:id="@+id/rl_report"
-                android:layout_width="0dp"
-                android:onClick="onTabClicked"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/tab_app_selector"
-                >
-            <ImageView
-                    android:id="@+id/report_iv"
-                    android:layout_width="@dimen/size_ic_tab"
-                    android:layout_height="@dimen/size_ic_tab"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/tiny_space"
-                    android:background="@drawable/report"
-                    />
-            <Button
-                    android:layout_below="@+id/report_iv"
-                    android:id="@+id/btn_conversation"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:scaleType="matrix"
-                    android:text="上报"
-                    android:clickable="false"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/smaller_textSize"/>
+                android:id="@+id/report_iv"
+                android:layout_width="@dimen/size_ic_tab"
+                android:layout_height="@dimen/size_ic_tab"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tiny_space"
+                android:background="@drawable/report" />
 
+            <Button
+                android:id="@+id/btn_conversation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/report_iv"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="matrix"
+                android:text="上报"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textSize" />
         </RelativeLayout>
 
+        <RelativeLayout
+            android:id="@+id/rl_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_app_selector"
+            android:onClick="onTabClicked" >
 
-        <RelativeLayout
-                android:id="@+id/rl_setting"
-                android:layout_width="0dp"
-                android:onClick="onTabClicked"
-                android:layout_height="match_parent"
-                android:background="@drawable/tab_app_selector"
-                android:layout_weight="1">
             <ImageView
-                    android:id="@+id/setting_iv"
-                    android:layout_width="@dimen/size_ic_tab"
-                    android:layout_height="@dimen/size_ic_tab"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/tiny_space"
-                    android:background="@drawable/setting"
-                    />
+                android:id="@+id/person_iv"
+                android:layout_width="@dimen/size_ic_tab"
+                android:layout_height="@dimen/size_ic_tab"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tiny_space"
+                android:background="@drawable/person" />
+
             <Button
-                    android:id="@+id/btn_app"
-                    android:layout_below="@+id/setting_iv"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:clickable="false"
-                    android:text="设置"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/smaller_textSize"/>
-        </RelativeLayout>
-        <RelativeLayout
-                android:id="@+id/rl_person"
-                android:layout_width="0dp"
-                android:onClick="onTabClicked"
-                android:background="@drawable/tab_app_selector"
+                android:id="@+id/btn_person"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
-            <ImageView
-                    android:id="@+id/person_iv"
-                    android:layout_width="@dimen/size_ic_tab"
-                    android:layout_height="@dimen/size_ic_tab"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/tiny_space"
-                    android:background="@drawable/person"
-                    />
-            <Button
-                    android:id="@+id/btn_person"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:text="我的"
-                    android:clickable="false"
-                    android:textColor="@color/white"
-                    android:layout_below="@+id/person_iv"
-                    android:textSize="@dimen/smaller_textSize"/>
+                android:layout_below="@+id/person_iv"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:text="我的"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textSize" />
         </RelativeLayout>
+
+  <!--      <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_app_selector"
+            android:onClick="onTabClicked" >
+
+            <ImageView
+                android:id="@+id/setting_iv"
+                android:layout_width="@dimen/size_ic_tab"
+                android:layout_height="@dimen/size_ic_tab"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/tiny_space"
+                android:background="@drawable/setting" />
+
+            <Button
+                android:id="@+id/btn_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/setting_iv"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:text="扫描"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textSize" />
+        </RelativeLayout>-->
     </LinearLayout>
-
 
 </RelativeLayout>

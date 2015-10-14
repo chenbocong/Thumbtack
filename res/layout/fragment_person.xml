@@ -44,6 +44,14 @@
                 android:background="@drawable/popbox_bg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/button_zc"
+                android:layout_width="285dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/zc"
+                android:text="提交" />
     </LinearLayout>
 
 </LinearLayout>

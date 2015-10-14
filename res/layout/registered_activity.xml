@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/loginbg"
+    android:background="@drawable/registbg"
     android:gravity="center" >
 
     <RelativeLayout
@@ -24,36 +24,54 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-8dp"
             android:gravity="center"
             android:orientation="vertical" >
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="3dp"
-                android:background="#00ffffff"
+                android:background="#dddddd"
                 android:ems="10"
-                android:hint="请输入您的用户名"
+                android:hint="  用户名"
                 android:singleLine="true" >
-
-                <requestFocus />
             </EditText>
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="50dp"
-                android:background="#00ffffff"
+                android:layout_marginBottom="3dp"
+                android:background="#dddddd"
                 android:ems="10"
-                android:hint="请输入密码"
+                android:hint="  密码"
                 android:singleLine="true" >
+            </EditText>
 
-                <requestFocus />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:background="#dddddd"
+                android:ems="10"
+                android:hint="  确认密码"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:background="#dddddd"
+                android:ems="10"
+                android:hint="  手机"
+                android:singleLine="true" >
             </EditText>
         </LinearLayout>
 
@@ -64,16 +82,8 @@
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/button_dl"
-                android:layout_width="125dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/dl"
-                android:text="登录" />
-
-            <Button
                 android:id="@+id/button_zc"
-                android:layout_width="125dp"
+                android:layout_width="265dp"
                 android:layout_height="50dp"
                 android:background="@drawable/zc"
                 android:text="注册" />

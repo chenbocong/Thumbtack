@@ -45,14 +45,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         <Button
-                android:id="@+id/btn_report"
-                android:text="上报信息"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="0dp"
-                android:textColor="@color/white"
-                android:textSize="@dimen/big_textSize"
-                android:background="@color/new_theme_red"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"/>
+            android:id="@+id/date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#bbbbbb"
+            android:text="天津市河西区育学里49号楼\n韩梅梅"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_textSize" />
+        <Button
+            android:id="@+id/saoysao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="#bbbbbb"
+            android:text="扫一扫"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_textSize" />
     </FrameLayout>
 </LinearLayout>

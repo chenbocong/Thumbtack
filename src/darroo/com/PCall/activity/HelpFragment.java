@@ -2,6 +2,7 @@ package darroo.com.PCall.activity;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
@@ -37,6 +38,7 @@ public class HelpFragment extends Fragment implements View.OnClickListener {
     public static Handler handler;
 
     private Button btnHelp;
+    private Button btnReport;
 
     private CreateTraceThread createTraceThread;
 
@@ -70,6 +72,8 @@ public class HelpFragment extends Fragment implements View.OnClickListener {
      * by Hankkin at:2015年7月15日 23:25:51
      */
     private void initViews() {
+        btnReport = (Button) getActivity().findViewById(R.id.btn_report);
+        btnReport.setOnClickListener(this);
         btnHelp = (Button) getActivity().findViewById(R.id.btn_help);
         btnHelp.setOnClickListener(this);
         createTraceThread = new CreateTraceThread();
@@ -101,6 +105,11 @@ public class HelpFragment extends Fragment implements View.OnClickListener {
             case R.id.btn_help:
                 createTraceThread.start();
                 btnHelp.setEnabled(false);
+                break;
+            case R.id.btn_report:
+                Intent intent = new Intent(getActivity().getApplicationContext(), ReportDetailActivity.class);
+                startActivity(intent);
+
                 break;
         }
     }

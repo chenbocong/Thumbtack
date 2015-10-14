@@ -14,7 +14,7 @@ Button button;
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.registered_activity);
-		button = (Button)findViewById(R.id.button_dl);
+		button = (Button)findViewById(R.id.button_zc);
 		button.setOnClickListener(new OnClickListener() {
 			
 			@Override

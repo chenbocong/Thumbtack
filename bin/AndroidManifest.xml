@@ -87,6 +87,10 @@
             android:name=".activity.Scanning"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".activity.DetailedInformationActivity"
+            android:label="@string/app_name" >
+        </activity>
 
         <service
             android:name="com.baidu.location.f"
@@ -97,7 +101,7 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="bVVneoxGL0WopZ9R5IffhEPV" />
+            android:value="F3A60R90GuXBHEsPx6ecLcOm" />
     </application>
 
 </manifest>

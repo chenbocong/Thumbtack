@@ -49,10 +49,10 @@ public class MainActivity extends FragmentActivity {
         reportFragment = new ReportFragment();
         settingFragment = new SettingFragment();
         personFragment = new PersonFragment();
-        fragments = new Fragment[]{helpFragment, reportFragment, settingFragment, personFragment};
+        fragments = new Fragment[]{reportFragment, helpFragment, settingFragment, personFragment};
         // 添加显示第一个fragment
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_help, helpFragment).add(R.id.fragment_help, reportFragment)
-                .add(R.id.fragment_help, settingFragment)
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_report, reportFragment).add(R.id.fragment_report, helpFragment)
+                .add(R.id.fragment_report, settingFragment)
                 .hide(settingFragment).hide(reportFragment).show(helpFragment).commit();
     }
 
@@ -67,26 +67,26 @@ public class MainActivity extends FragmentActivity {
 
             case R.id.rl_help:
                 index = 0;
-                titleTv.setText("求助");
+                titleTv.setText("导航");
                 break;
             case R.id.rl_report:
                 index = 1;
                 titleTv.setText("上报");
                 break;
-            case R.id.rl_setting:
-                index = 2;
-                titleTv.setText("设置");
-                break;
             case R.id.rl_person:
                 index = 3;
                 titleTv.setText("我的");
                 break;
+//            case R.id.rl_setting:
+//                index = 2;
+//                titleTv.setText("设置");
+//                break;
         }
         if (currentTabIndex != index) {
             FragmentTransaction trx = getSupportFragmentManager().beginTransaction();
             trx.hide(fragments[currentTabIndex]);
             if (!fragments[index].isAdded()) {
-                trx.add(R.id.fragment_help, fragments[index]);
+                trx.add(R.id.fragment_report, fragments[index]);
             }
             trx.show(fragments[index]).commit();
         }
@@ -104,7 +104,6 @@ public class MainActivity extends FragmentActivity {
         mTabs = new ImageView[4];
         mTabs[0] = (ImageView) findViewById(R.id.help_iv);
         mTabs[1] = (ImageView) findViewById(R.id.report_iv);
-        mTabs[2] = (ImageView) findViewById(R.id.setting_iv);
         mTabs[3] = (ImageView) findViewById(R.id.person_iv);
         mTabs[0].setSelected(true);
 
